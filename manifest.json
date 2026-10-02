@@ -1,0 +1,44 @@
+{
+    "manifest_version": 3,
+    "name": "Lsw_BrowserSpeedTest",
+    "version": "1.0.0",
+    "description": "Measure browser page loading time.",
+    "permissions": [
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_title": "Lsw_BrowserSpeedTest",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "lsw-browserspeedtest@example.com"
+        }
+    },
+    "icons": {
+        "16": "icons/a1.ico",
+        "32": "icons/a1.ico",
+        "48": "icons/a1.ico",
+        "128": "icons/a1.ico"
+    }
+}

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lsw_BrowserSpeedTest</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      Lsw_BrowserSpeedTest
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="main-time" id="mainTime">
+      -- s
+    </div>
+
+    <div class="status" id="status">
+      等待页面加载完成
+    </div>
+
+    <div class="details">
+      <div class="row">
+        <span title="域名解析所花费的时间">DNS解析</span>
+        <span id="dns">-- s</span>
+      </div>
+
+      <div class="row">
+        <span title="建立网络连接所花费的时间">建立连接</span>
+        <span id="connection">-- s</span>
+      </div>
+
+      <div class="row">
+        <span title="接收网页主响应数据所花费的时间">接收数据</span>
+        <span id="download">-- s</span>
+      </div>
+
+      <div class="row">
+        <span title="从开始加载到页面 load 完成所花费的总时间">页面完成</span>
+        <span id="complete">-- s</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
