@@ -21,6 +21,8 @@ The extension uses this information only to display webpage loading performance 
 
 The current version stores the latest measurement result locally in the user's browser using browser extension storage.
 
+The stored measurement result may include the URL of the current webpage, the measurement timestamp, and webpage loading timing data.
+
 The current version does not operate a developer-controlled server for collecting measurement results.
 
 ## Data Transmission

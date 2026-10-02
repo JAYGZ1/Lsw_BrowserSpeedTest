@@ -56,6 +56,7 @@ BrowserSpeedTest/
  popup.js
  icons/
      a1.ico
+```
 版本
 
 当前版本：
@@ -135,6 +136,7 @@ BrowserSpeedTest/
  popup.js
  icons/
      a1.ico
+```
 Version
 
 Current version:
